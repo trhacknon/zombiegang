@@ -1,18 +1,18 @@
-![[Version 0.5.1~beta](https://github.com/r3nt0n)](http://img.shields.io/badge/version-0.5.1~beta-orange.svg)
-![[Python 3](https://github.com/r3nt0n)](http://img.shields.io/badge/python-3-blue.svg)
-![[GPL-3.0 License](https://github.com/r3nt0n)](https://img.shields.io/badge/license-GPL%203.0-brightgreen.svg)
+![[Version 0.5.1~beta](https://github.com/trhacknon)](http://img.shields.io/badge/version-0.5.1~beta-orange.svg)
+![[Python 3](https://github.com/trhacknon)](http://img.shields.io/badge/python-3-blue.svg)
+![[GPL-3.0 License](https://github.com/trhacknon)](https://img.shields.io/badge/license-GPL%203.0-brightgreen.svg)
 ![[Date](https://github.com/r3nt0n)](http://img.shields.io/badge/date-2022-yellow.svg)
 
 
 # zombiegang
 
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/intro.gif" /></div>
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/intro.gif" /></div>
 <br>  
 
 Zombiegang is a botnet written mostly in Python and PHP. It supports **asynchronous communication between cc and zombies**, **remote-shell** live sessions and **task scheduler**. It also has a **plugin manager**, which comes with some modules pre-included to perform most typical attacks (**DDoS, bruteforce** and **keylogger**). This modular approach allows anyone to **extend features by writing his own modules** (I will appreciate any contribution).  
 
 <br>
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/intro2.gif" /></div>  
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/intro2.gif" /></div>  
 <br>
 
 The **Command and Control server** is a semi-CRUD API written in php, which manages database read/write operations and authentication. This schema also allows to separate the front-end, which resides entirely in the client used by masters. 
@@ -27,7 +27,7 @@ Having a centralized db makes it easier for masters and zombies to exchange info
 You can schedule tasks and the zombies will receive this info as soon as they go online and refresh his "assignments". If the task was scheduled to be executed in future, the zombie will save this homework and run the task when the start time comes. You also can schedule stop datetimes.
 
 <br>
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/attack_example.png" /></div>
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/attack_example.png" /></div>
 <br>  
   
 There are special fields in DB which are designed to be nested values, so you can create new fields inside without touching any config (e.g.: `Tasks.task_content`,`Zombies.sysinfo`)  
@@ -43,7 +43,7 @@ There are special fields in DB which are designed to be nested values, so you ca
 
 ### Download zombiegang framework
 ```
-git clone https://github.com/r3nt0n/zombiegang
+git clone https://github.com/trhacknon/zombiegang
 ```
   
 ### Create database
@@ -129,13 +129,13 @@ On this stage you are going to create your master password: with `zgang.exe`, cr
 **Note**: Mozilla Firefox is the recommended browser, any other could work but won't be officially supported. Some visual features (e.g.: emojis, form elements...) could vary across different browsers.
 
 <br>
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/menu.png" /></div>
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/menu.png" /></div>
 <br>
 
 If you want to cover your trace, use the built-in proxy tool to connect to cc-server through the socks5 proxy of your choice:
 
 <br>
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/proxy_example.png" /><p style="font-decoration: italic;">proxy configuration example</p></div>
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/proxy_example.png" /><p style="font-decoration: italic;">proxy configuration example</p></div>
 <br>
 
 #### cli-client
@@ -145,7 +145,7 @@ Additionally, you have a cli client (keeping msfconsole style) to login to cc-se
 python3 cli.py
 ```
 
-<div align="center"><img src="https://github.com/r3nt0n/zombiegang/blob/master/img/master-client_cli_live_session_example.png" /><p style="font-decoration: italic;">simple cli live session example</p></div>
+<div align="center"><img src="https://github.com/trhacknon/zombiegang/blob/master/img/master-client_cli_live_session_example.png" /><p style="font-decoration: italic;">simple cli live session example</p></div>
 <br>
 
 
@@ -177,7 +177,7 @@ This is a personal project, and is created for the sole purpose of security awar
 
 
 ## References
-+ CSS sheet is based on the work of <a href="https://github.com/jdan/">Jordan Scales</a> (<a href="https://github.com/jdan/98.css/blob/master/LICENSE">css win98 repo</a>)
++ CSS sheet is based on the work of <a href="https://github.com/trhacknon/">Trhackno </a> (<a href="https://github.com/jdan/98.css/blob/master/LICENSE">css win98 repo</a>)
 + Age of Empires icons found <a href="https://www.forgottenempires.net/age-of-empires-ii-definitive-edition/campaigns">here</a>
 + mIRC icon designed by <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es  </a>
 + All pictures were found on the Internet
